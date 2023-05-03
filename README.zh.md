@@ -76,3 +76,6 @@ hitsound = 连打
 例子：sfx_forte_2_celeste.wav在Celeste文件夹里
 
 ### 如果你没有替换对应音效游戏会使用默认音效
+
+### 另
+**如果你想要把你的音效包加到默认里，可以discord或者qq找我**

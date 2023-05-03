@@ -77,3 +77,6 @@ soundname_<folder name in lowercase>.wav (or other audio format)
 For example: sfx_forte_2_celeste.wav in Celeste folder.
 
 ### The game will use the default sound if you don't implement the sound.
+
+### Ps
+**If you want to add your sound pack into default release, contact me on discord.**
