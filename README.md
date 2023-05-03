@@ -69,7 +69,7 @@ sfx_ghost_gc = gc scene ghost
 hitsound = masher 
 ```
 
-#### For naming style
+### For naming style
 **You should name the audio file with the following format:**
 
 soundname_<folder name in lowercase>.wav (or other audio format)
