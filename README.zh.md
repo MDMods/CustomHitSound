@@ -4,13 +4,17 @@
 
 ## 如何安装
 安装 [Muse Dash Mod tools](https://github.com/MDModsDev/MuseDashModToolsUI/releases/latest), 跟着提示的流程安装mod。
+
 然后从 [Releases](https://github.com/MDModsDev/CustomHitSound/releases/latest)里下载BattleSfx.zip, 解压到`Muse Dash\UserData` 文件夹.
+
 最终路径应为`Muse Dash\UserData\BattleSfx`.
 
 ## 如何使用音效包
 
 在游戏的声音设置的打击音效里有对应的开关
+
 ![Screenshot](Intro/Screenshot.zh.png)
+
 选择对应按钮来使用音效包
 
 ## 如何创建自己的音效包
@@ -66,7 +70,9 @@ hitsound = 连打
 
 #### 命名规则
 **你需要把文件命名为以下的格式：**
+
 音效名称_<小写的文件夹名字>.wav (或者其他音频格式)
+
 例子：sfx_forte_2_celeste.wav在Celeste文件夹里
 
 ### 如果你没有替换对应音效游戏会使用默认音效

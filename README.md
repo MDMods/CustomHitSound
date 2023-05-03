@@ -6,12 +6,16 @@ Allows you to use custom hit sounds in game.
 
 ## How to Install
 Install [Muse Dash Mod tools](https://github.com/MDModsDev/MuseDashModToolsUI/releases/latest), follow the instructions and install the mod.
+
 Then, download BattleSfx.zip from [Releases](https://github.com/MDModsDev/CustomHitSound/releases/latest), extract it into `Muse Dash\UserData` folder.
+
 The path should be `Muse Dash\UserData\BattleSfx`.
 
 ## How to use the Hit Sound Pack
 There should be in game toggles in the Audio Setting, under the Hit Sound Effects
+
 ![Screenshot](Intro/Screenshot.png)
+
 Select the toggle to use the sound effect.
 
 ## How to Create your own Hit Sound
@@ -67,7 +71,9 @@ hitsound = masher
 
 #### For naming style
 **You should name the audio file with the following format:**
+
 soundname_<folder name in lowercase>.wav (or other audio format)
+
 For example: sfx_forte_2_celeste.wav in Celeste folder.
 
 ### The game will use the default sound if you don't implement the sound.
