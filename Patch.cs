@@ -45,7 +45,7 @@ internal static class VolumeSelectPatch
             toggle.name = "Tgl" + key;
             toggle.transform.position = new Vector3(x, -3.65f, 100);
 
-            var text = toggle.transform.GetChild(1).gameObject.GetComponent<Text>();
+            var text = toggle.transform.GetChild(1).GetComponent<Text>();
             text.text = key;
 
             var toggleComp = toggle.GetComponent<Toggle>();
