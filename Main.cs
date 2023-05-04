@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using MelonLoader;
-using UnityEngine.UI;
+using Tomlet;
+using Tomlet.Attributes;
 
 namespace CustomHitSound;
 
 internal class Main : MelonMod
 {
     internal static Dictionary<string, string[]> Paths { get; } = new();
-    internal static Dictionary<string, Toggle> Toggles { get; } = new();
 
     public override void OnInitializeMelon()
     {
@@ -23,22 +23,41 @@ internal class Main : MelonMod
 
     public override void OnDeinitializeMelon()
     {
-        if (!Paths.ContainsKey(Save.Sfx))
-            Save.Sfx = string.Empty;
-        File.WriteAllText(Path.Combine("UserData", "Custom Hit Sound.cfg"), Save.Sfx);
+        if (!Paths.ContainsKey(Save.Setting.Sfx))
+            Save.Setting.Sfx = string.Empty;
+        File.WriteAllText(Path.Combine("UserData", "Custom Hit Sound.cfg"), TomletMain.TomlStringFrom(Save.Setting));
     }
 }
 
 internal static class Save
 {
-    private const string Default = "Celeste";
-    internal static string Sfx { get; set; }
+    private static readonly Data Default = new("Celeste", false);
+    internal static Data Setting;
 
     public static void Load()
     {
         if (!File.Exists(Path.Combine("UserData", "Custom Hit Sound.cfg")))
-            File.WriteAllText(Path.Combine("UserData", "Custom Hit Sound.cfg"), Default);
+        {
+            var defaultConfig = TomletMain.TomlStringFrom(Default);
+            File.WriteAllText(Path.Combine("UserData", "Custom Hit Sound.cfg"), defaultConfig);
+        }
 
-        Sfx = File.ReadAllText(Path.Combine("UserData", "Custom Hit Sound.cfg"));
+        var data = File.ReadAllText(Path.Combine("UserData", "Custom Hit Sound.cfg"));
+        Setting = TomletMain.To<Data>(data);
+    }
+
+    internal struct Data
+    {
+        [TomlPrecedingComment("The current using sfx pack")]
+        internal string Sfx { get; set; }
+
+        [TomlPrecedingComment("Whether debug mode enabled or not")]
+        internal bool DebugModeEnabled { get; set; }
+
+        internal Data(string sfx, bool debugModeEnabled)
+        {
+            Sfx = sfx;
+            DebugModeEnabled = debugModeEnabled;
+        }
     }
 }

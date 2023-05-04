@@ -178,9 +178,9 @@ VoiceAmiyaHurt05
 
 **You should name the audio file with the following format:**
 
-**soundname_<folder name in lowercase>.wav (or mp3, aiff, ogg)**
+**soundname_<folder name in lowercase/uppercase>.wav (or mp3, aiff, ogg)**
 
-For example: sfx_forte_2_celeste.wav in Celeste folder.
+For example: `sfx_forte_2_celeste.wav` (or you can name it as `sfx_forte_2_Celeste.wav`) in Celeste folder.
 
 ### The game will use the default sound if you don't implement the sound.
 

@@ -177,9 +177,9 @@ VoiceAmiyaHurt05
 
 **你需要把文件命名为以下的格式：**
 
-**音效名称_<小写的文件夹名字>.wav (或者是mp3，aiff，ogg)**
+**音效名称_<小写或大写的文件夹名字>.wav (或者是mp3，aiff，ogg)**
 
-例子：sfx_forte_2_celeste.wav在Celeste文件夹里
+例子：Celeste文件夹里的`sfx_forte_2_celeste.wav` （也可以命名为`sfx_forte_2_Celeste.wav`）
 
 ### 如果你没有替换对应音效游戏会使用默认音效
 

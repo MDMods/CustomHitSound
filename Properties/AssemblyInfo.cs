@@ -33,7 +33,7 @@ using Main = CustomHitSound.Main;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.3")]
-[assembly: AssemblyFileVersion("1.0.3")]
-[assembly: MelonInfo(typeof(Main), "CustomHitSound", "1.0.3", "lxy")]
+[assembly: AssemblyVersion("1.0.4")]
+[assembly: AssemblyFileVersion("1.0.4")]
+[assembly: MelonInfo(typeof(Main), "CustomHitSound", "1.0.4", "lxy")]
 [assembly: MelonGame("PeroPeroGames", "MuseDash")]
