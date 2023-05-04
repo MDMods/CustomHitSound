@@ -23,7 +23,7 @@ internal class Main : MelonMod
 
     public override void OnDeinitializeMelon()
     {
-        if (!Toggles.TryGetValue(Save.Sfx, out var toggle) || !toggle.isOn)
+        if (!Paths.ContainsKey(Save.Sfx))
             Save.Sfx = string.Empty;
         File.WriteAllText(Path.Combine("UserData", "Custom Hit Sound.cfg"), Save.Sfx);
     }

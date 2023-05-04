@@ -15,7 +15,7 @@ internal static class AudioManagerPatch
 {
     private static void Postfix(AudioManager __instance)
     {
-        if (!Main.Toggles.TryGetValue(Save.Sfx, out var toggle) || !toggle.isOn)
+        if (!Main.Paths.ContainsKey(Save.Sfx))
         {
             Save.Sfx = string.Empty;
             return;
@@ -55,6 +55,10 @@ internal static class VolumeSelectPatch
                 {
                     DataHelper.battleSfxType = 0;
                     Save.Sfx = key;
+                }
+                else
+                {
+                    Save.Sfx = string.Empty;
                 }
             }));
 
