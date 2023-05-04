@@ -18,11 +18,13 @@
 选择对应按钮来使用音效包
 
 ## 如何创建自己的音效包
-在BattleSfx.zip里有一个默认的模板 (Celeste文件夹).
 
-#### 你可以替换很多种音效：
+**在BattleSfx.zip里有一个默认的模板 (Celeste文件夹).**
+
+### 你可以替换很多种音效：
 
 ```
+char_common_fever
 char_common_empty_atk
 char_common_empty_jump
 sfx_hp
@@ -53,29 +55,134 @@ hitsound_014
 hitsound_015
 ```
 
-#### 对于那些音效的名字，你可以参考下面的表格：
+### 对于那些音效的名字，你可以参考下面的表格：
 
 ```
-sfx_forte_2 = 大型2, boss冲撞
+sfx_forte_2 = 大型2，boss冲撞
 sfx_forte_3 = 锤子
-sfx_mezzo_1 = 小型, 中型, 双押, boss子弹
+sfx_mezzo_1 = 小型，中型，双押，boss子弹
 sfx_mezzo_3 = 幽灵
-sfx_piano_2 = 突袭, 大型1
+sfx_piano_2 = 大型1，突袭
 sfx_hp = 红心
 sfx_score = 蓝音符
-sfx_press_top = 长条
+sfx_press_top = 长条头/尾
+sfx_press = 长条中间
 sfx_ghost_gc = Groove Coaster的幽灵
 hitsound = 连打 
 ```
 
+### 还有人物受伤音效
+
+#### 玛莉嘉：
+```
+VoiceMarijaHurt02
+VoiceMarijaHurt03
+VoiceMarijaHurt04
+VoiceMarijaHurt05
+VoiceMarijaHurt06
+VoiceMarijaHurt07
+VoiceMarijaHurt08
+VoiceMarijaHurt09
+```
+
+#### 凛：
+```
+VoiceRinHurt01
+VoiceRinHurt02
+VoiceRinHurt03
+VoiceRinHurt06
+VoiceRinHurt09
+VoiceRinHurt10
+VoiceRinHurt11
+```
+
+#### 布若：
+```
+VoiceBuroHurt01
+VoiceBuroHurt03
+VoiceBuroHurt05
+VoiceBuroHurt06
+VoiceBuroHurt07
+VoiceBuroHurt08
+VoiceBuroHurt10
+```
+
+#### 欧拉：
+```
+VoiceOlaHurt01
+VoiceOlaHurt02
+VoiceOlaHurt03
+VoiceOlaHurt04
+VoiceOlaHurt05
+```
+
+#### 柚梅：
+```
+VoiceYumeHurt01
+VoiceYumeHurt02
+VoiceYumeHurt03
+VoiceYumeHurt04
+VoiceYumeHurt05
+VoiceYumeHurt06
+VoiceYumeHurt07
+```
+
+#### Neko：
+```
+VoiceNekoHurt01
+VoiceNekoHurt02
+VoiceNekoHurt03
+VoiceNekoHurt04
+VoiceNekoHurt05
+```
+
+#### 博丽灵梦：
+```
+VoiceReimuHurt01
+VoiceReimuHurt02
+VoiceReimuHurt03
+VoiceReimuHurt04
+VoiceReimuHurt05
+```
+
+#### El_Clear：
+```
+VoiceClearHurt02
+VoiceClearHurt04
+VoiceClearHurt06
+VoiceClearHurt07
+VoiceClearHurt08
+VoiceClearHurt10
+```
+
+#### 雾雨魔理沙：
+```
+VoiceMarisaHurt01
+VoiceMarisaHurt02
+VoiceMarisaHurt03
+VoiceMarisaHurt04
+VoiceMarisaHurt05
+```
+
+#### 阿米娅：
+```
+VoiceAmiyaHurt01
+VoiceAmiyaHurt02
+VoiceAmiyaHurt03
+VoiceAmiyaHurt04
+VoiceAmiyaHurt05
+```
+
 ### 命名规则
+
 **你需要把文件命名为以下的格式：**
 
-音效名称_<小写的文件夹名字>.wav (或者其他音频格式)
+**音效名称_<小写的文件夹名字>.wav (或者是mp3，aiff，ogg)**
 
 例子：sfx_forte_2_celeste.wav在Celeste文件夹里
 
 ### 如果你没有替换对应音效游戏会使用默认音效
 
 ### 另
+
 **如果你想要把你的音效包加到默认里，可以discord或者qq找我**
