@@ -11,6 +11,8 @@ Then, download BattleSfx.zip from [Releases](https://github.com/MDModsDev/Custom
 
 The path should be `Muse Dash\UserData\BattleSfx`.
 
+
+
 ## How to use the Hit Sound Pack
 There should be in game toggles in the Audio Setting, under the Hit Sound Effects
 
@@ -18,8 +20,12 @@ There should be in game toggles in the Audio Setting, under the Hit Sound Effect
 
 Select the toggle to use the sound effect.
 
+
+
 ## How to Create your own Hit Sound
 **There is a default template in BattleSfx.zip (The Celeste folder).**
+
+
 
 ### There are several hit sounds you can replace:
 
@@ -56,6 +62,8 @@ hitsound_014
 hitsound_015
 ```
 
+
+
 ### And for the battle sound names, you can refer to the following table:
 
 ```
@@ -71,6 +79,8 @@ sfx_press = holding sound
 sfx_ghost_gc = gc scene ghost
 hitsound = masher 
 ```
+
+
 
 ### And also the character hurt sound
 
@@ -180,6 +190,8 @@ VoiceAmiyaHurt04
 VoiceAmiyaHurt05
 ```
 
+
+
 ### For naming style
 
 **You should name the audio file with the following format:**
@@ -188,7 +200,19 @@ VoiceAmiyaHurt05
 
 For example: `sfx_forte_2_celeste.wav` (or you can name it as `sfx_forte_2_Celeste.wav`) in Celeste folder.
 
+
+
+### For Debug Mode
+
+Debug Mode will output the audio file key name and corresponding path to the console for people to check whether it uses the correct file.
+
+Go to the UserData folder under Muse Dash folder and open the Custom Hit Sound.cfg file. The path should be `MuseDash\UserData\Custom Hit Sound.cfg`. Then change the DebugModeEnabled = true.
+
+
+
 ### The game will use the default sound if you don't implement the sound.
+
+
 
 ### Ps
 

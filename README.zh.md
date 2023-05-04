@@ -9,6 +9,8 @@
 
 最终路径应为`Muse Dash\UserData\BattleSfx`.
 
+
+
 ## 如何使用音效包
 
 在游戏的声音设置的打击音效里有对应的开关
@@ -17,9 +19,13 @@
 
 选择对应按钮来使用音效包
 
+
+
 ## 如何创建自己的音效包
 
 **在BattleSfx.zip里有一个默认的模板 (Celeste文件夹).**
+
+
 
 ### 你可以替换很多种音效：
 
@@ -55,6 +61,8 @@ hitsound_014
 hitsound_015
 ```
 
+
+
 ### 对于打击音效的名字，你可以参考下面的表格：
 
 ```
@@ -71,7 +79,9 @@ sfx_ghost_gc = Groove Coaster的幽灵
 hitsound = 连打 
 ```
 
-### 还有人物受伤音效
+
+
+### 还可以替换人物受伤音效
 
 #### 玛莉嘉：
 ```
@@ -179,6 +189,8 @@ VoiceAmiyaHurt04
 VoiceAmiyaHurt05
 ```
 
+
+
 ### 命名规则
 
 **你需要把文件命名为以下的格式：**
@@ -187,7 +199,19 @@ VoiceAmiyaHurt05
 
 例子：Celeste文件夹里的`sfx_forte_2_celeste.wav` （也可以命名为`sfx_forte_2_Celeste.wav`）
 
+
+
+### Debug 模式
+
+Debug模式会在控制台输出对应音频文件的名称和所用的路径，可以用来检测是否使用了正确的音频文件
+
+打开UserData底下的Custom Hit Sound.cfg文件，路径应为`MuseDash\UserData\Custom Hit Sound.cfg`. 然后改成DebugModeEnabled = true
+
+
+
 ### 如果你没有替换对应音效游戏会使用默认音效
+
+
 
 ### 另
 
