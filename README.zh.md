@@ -83,6 +83,8 @@ VoiceMarijaHurt06
 VoiceMarijaHurt07
 VoiceMarijaHurt08
 VoiceMarijaHurt09
+
+VoiceCatMarijaHurt
 ```
 
 #### 凛：
@@ -94,6 +96,8 @@ VoiceRinHurt06
 VoiceRinHurt09
 VoiceRinHurt10
 VoiceRinHurt11
+
+VoiceCatRinHurt
 ```
 
 #### 布若：
@@ -105,6 +109,8 @@ VoiceBuroHurt06
 VoiceBuroHurt07
 VoiceBuroHurt08
 VoiceBuroHurt10
+
+VoiceCatBuroHurt
 ```
 
 #### 欧拉：
