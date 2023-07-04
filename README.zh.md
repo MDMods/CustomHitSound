@@ -189,6 +189,16 @@ VoiceAmiyaHurt04
 VoiceAmiyaHurt05
 ```
 
+#### 道士布若：
+
+```
+VoiceExorcistHurt01
+VoiceExorcistHurt02
+VoiceExorcistHurt03
+VoiceExorcistHurt04
+VoiceExorcistHurt05
+```
+
 
 
 ### 命名规则

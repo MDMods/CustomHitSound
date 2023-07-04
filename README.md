@@ -190,6 +190,16 @@ VoiceAmiyaHurt04
 VoiceAmiyaHurt05
 ```
 
+#### For Exorcist Buro:
+
+```
+VoiceExorcistHurt01
+VoiceExorcistHurt02
+VoiceExorcistHurt03
+VoiceExorcistHurt04
+VoiceExorcistHurt05
+```
+
 
 
 ### For naming style
