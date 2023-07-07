@@ -190,8 +190,9 @@ VoiceAmiyaHurt05
 ```
 
 #### 道士布若：
-
 ```
+char_exorcist_empty_atk
+
 VoiceExorcistHurt01
 VoiceExorcistHurt02
 VoiceExorcistHurt03

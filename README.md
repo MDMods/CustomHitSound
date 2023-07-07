@@ -191,8 +191,9 @@ VoiceAmiyaHurt05
 ```
 
 #### For Exorcist Buro:
-
 ```
+char_exorcist_empty_atk
+
 VoiceExorcistHurt01
 VoiceExorcistHurt02
 VoiceExorcistHurt03
