@@ -1,16 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11520.95 d18.3
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomHitSound", "CustomHitSound.csproj", "{B5898A90-5AFA-4B22-A523-B3CF924A9C41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B5898A90-5AFA-4B22-A523-B3CF924A9C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B5898A90-5AFA-4B22-A523-B3CF924A9C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5898A90-5AFA-4B22-A523-B3CF924A9C41}.Debug|x64.ActiveCfg = Debug|x64
+		{B5898A90-5AFA-4B22-A523-B3CF924A9C41}.Debug|x64.Build.0 = Debug|x64
 		{B5898A90-5AFA-4B22-A523-B3CF924A9C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5898A90-5AFA-4B22-A523-B3CF924A9C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5898A90-5AFA-4B22-A523-B3CF924A9C41}.Release|x64.ActiveCfg = Release|x64
+		{B5898A90-5AFA-4B22-A523-B3CF924A9C41}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
