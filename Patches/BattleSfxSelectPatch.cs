@@ -39,6 +39,11 @@ internal static class BattleSfxSelectPatch
         checkmark.SetActive(false);
 
         var correctIndex = __instance.m_BattleSfx.FindIndex(new Func<Toggle, bool>(x => x.name == $"Tgl{Setting.CurrentSfx}"));
+        if (correctIndex < 0)
+        {
+            Setting.CurrentSfx = string.Empty;
+            return;
+        }
         var correctImgBg = __instance.m_Content.GetChild(correctIndex).GetChild(0);
         __instance.m_BattleSfx[correctIndex].isOn = true;
         correctImgBg.GetComponent<Image>().color = __instance.highLight;
