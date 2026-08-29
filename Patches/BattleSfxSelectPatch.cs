@@ -2,6 +2,7 @@ using HarmonyLib;
 using Il2Cpp;
 using Il2CppAssets.Scripts.Database;
 using Il2CppAssets.Scripts.PeroTools.GeneralLocalization;
+using UnityEngine;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
@@ -89,11 +90,18 @@ internal static class BattleSfxSelectPatch
             var imgBg = toggle.transform.GetChild(0);
             var txt = imgBg.GetChild(1);
             Object.Destroy(txt.GetComponent<Localization>());
-            txt.GetComponent<Text>().text = sfxPackName;
-
+            var textComp = txt.GetComponent<Text>();
+            textComp.text = sfxPackName;
+            
             var toggleComp = toggle.GetComponent<Toggle>();
+            var selectedItemHandle = toggle.GetComponent<SelectedItemHandle>();
+            var selectedColor = selectedItemHandle.selectedColor = new Color(1, 1, 1, 1);
+            var unSelectedColor = selectedItemHandle.unSelectedColor = new Color(0.996f, 0.651f, 0.854f, 1);
             toggleComp.onValueChanged.AddListener((Action<bool>)(selected =>
             {
+
+                textComp.color = selected ? selectedColor : unSelectedColor;
+                
                 if (selected)
                 {
                     Setting.CurrentSfx = sfxPackName;
@@ -108,7 +116,6 @@ internal static class BattleSfxSelectPatch
             }));
 
             toggleComp.SetIsOnWithoutNotify(Setting.CurrentSfx == sfxPackName);
-
             __instance.m_BattleSfx.Add(toggleComp);
         }
     }
