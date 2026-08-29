@@ -20,6 +20,10 @@ internal static class AudioManagerPatch
             var length = Setting.CurrentSfx.Length + 1;
             var sfxName = Path.GetFileNameWithoutExtension(sfxFilePath)[..^length];
             var audioClip = Manager.Load(sfxFilePath);
+            if (sfxName == "sfx_press")
+            {
+                __instance.m_SfxBuffer["sfx_press_horse"] = audioClip;
+            }
             __instance.m_SfxBuffer[sfxName] = audioClip;
         }
 
